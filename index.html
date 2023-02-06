@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/logo.svg" type="image/x-icon">
+    <title>CREATE</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="image/logo-name.svg" alt="name">
+                    <img src="image/logo.svg" alt="logo">
+                </div>
+                <nav class="header-menu">
+                    <div class="menu__btn-block">
+                        <span class="menu__btn"></span>
+                    </div>
+                    <ul class="menu-ul">
+                        <li><a href="#" class="menu-link">Women</a></li>
+                        <li><a href="#" class="menu-link">Men</a></li>
+                        <li><a href="#" class="menu-link">Girls</a></li>
+                        <li><a href="#" class="menu-link">Boys</a></li>
+                        <li><a href="#" class="menu-link link__sale">Sale</a></li>
+                        <li class="menu-li">
+                            <div>
+                                <span class="menu-li__span"></span>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-toolbar toolbar-block">
+                    <div class="toolbar-wishlist">
+                        <p class="toolbar-wishlist__icon icon-heart"></p>
+                        <p class="toolbar-wishlist__number">2</p>
+                    </div>
+                    <div class="toolbar-cart__line"></div>
+                    <div class="toolbar-cart">
+                        <p class="toolbar-cart__icon icon-cart"></p>
+                        <p class="toolbar-cart__number">4</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="main-block">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide main-container">
+                            <article class="main-item">
+                                <h3 class="main-item__title">New collection</h3>
+                                <p class="main-item__name">Menswear 2020</p>
+                                <div class="main-item__btn-block btn-block__main-item">
+                                    <a href="#" class="btn-block__btn-1 btn-1">Shop sale</a>
+                                    <a href="#" class="btn-block__btn-2 btn-2">Shop the menswear</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide main-container">
+                            <article class="main-item">
+                                <h3 class="main-item__title">New collection</h3>
+                                <p class="main-item__name">Menswear 2020</p>
+                                <div class="main-item__btn-block btn-block__main-item">
+                                    <a href="#" class="btn-block__btn-1 btn-1">Shop sale</a>
+                                    <a href="#" class="btn-block__btn-2 btn-2">Shop the menswear</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="swiper-slide main-container">
+                            <article class="main-item">
+                                <h3 class="main-item__title">New collection</h3>
+                                <p class="main-item__name">Menswear 2020</p>
+                                <div class="main-item__btn-block btn-block__main-item">
+                                    <a href="#" class="btn-block__btn-1 btn-1">Shop sale</a>
+                                    <a href="#" class="btn-block__btn-2 btn-2">Shop the menswear</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                    <button class="main-btn-prev icon-left-arrow"></button>
+                    <button class="main-btn-next icon-right-arrow"></button>
+                </div>
+            </section>
+            <section class="category-container">
+                <div class="category-item">
+                    <a href="#" class="category-item__img">
+                        <img class="category-item__image" src="image/category-women.png" alt="image">
+                    </a>
+                    <div class="category-item__content">
+                        <a href="#" class="category-item__content-name">Women’s</a>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <a href="#" class="category-item__img">
+                        <img class="category-item__image" src="image/category-men.png" alt="image">
+                    </a>
+                    <div class="category-item__content">
+                        <a href="#" class="category-item__content-name">Men’s</a>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <a href="#" class="category-item__img">
+                        <img class="category-item__image" src="image/category-kid.png" alt="image">
+                    </a>
+                    <div class="category-item__content">
+                        <a href="#" class="category-item__content-name">Kids’</a>
+                    </div>
+                </div>
+            </section>
+            <section class="card-container">
+                <article class="card-content content-block">
+                    <p class="content-block__category">Summer Collections</p>
+                    <p class="content-block__text">Sale Up to 70%</p>
+                    <a href="#" class="content-block__btn btn-1">Explore new prices</a>
+                </article>
+                <article class="card-content content-block">
+                    <p class="content-block__category">Deal of the week</p>
+                    <p class="content-block__text">Stay Warm With Our<br>New Sweaters</p>
+                    <a href="#" class="content-block__btn btn-1">Shop now</a>
+                    <div class="timer-block">
+                        <p class="timer-block__text">Limited time offer</p>
+                        <div class="timer-block__bottom">
+                            <div class="timer-block__item item-block">
+                                <p class="item-block__number" id="days"></p>
+                                <p class="item-block__text">Days</p>
+                            </div>
+                            <div class="timer-block__item item-block">
+                                <p class="item-block__number" id="hours"></p>
+                                <p class="item-block__text">Hours</p>
+                            </div>
+                            <div class="timer-block__item item-block">
+                                <p class="item-block__number" id="minutes"></p>
+                                <p class="item-block__text">Mins</p>
+                            </div>
+                            <div class="timer-block__item item-block">
+                                <p class="item-block__number" id="seconds"></p>
+                                <p class="item-block__text">Sec</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card-content content-block">
+                    <p class="content-block__category">New collection</p>
+                    <p class="content-block__text">Shoes & Bags<br>autumn / winter 2020</p>
+                    <a href="#" class="content-block__btn btn-1">See offers</a>
+                </article>
+                <article class="card-content content-block">
+                    <p class="content-block__category">For All new Email Subscribers</p>
+                    <p class="content-block__text">Get 5% Off & Free Delivery</p>
+                    <form class="content-block__form-block card-form" action="" name="card-email" method="">
+                        <div class="card-form__email">
+                            <div class="card-form__email-name">
+                                <label class="card-form__email-label" for="card-email">Email</label>
+                            </div>
+                            <div class="card-form__email-email">
+                                <input class="card-form__email-input" type="email" name="card-email" id="card-email" placeholder="Your working email">
+                                <button class="card-form__email-button" type="submit">Subscribe</button>
+                            </div>
+                            <div class="card-form__email-text">
+                                <p class="card-form__email-p">
+                                    *Sign up to be the first to hear about exclusive deals, special offers and upcoming collections.
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section class="popular-container">
+                <div class="popular-title">
+                    <h3 class="popular-title__title">Popular categories</h3>
+                </div>
+                <div class="popular-items">
+                    <article class="popular-item item-popular">
+                        <a href="#" class="item-popular__img">
+                            <img class="item-popular__img-img" src="image/popular-img1.png" alt="image">
+                        </a>
+                        <a href="#" class="item-popular__name">Tops</a>
+                    </article>
+                    <article class="popular-item item-popular">
+                        <a href="#" class="item-popular__img">
+                            <img class="item-popular__img-img" src="image/popular-img2.png" alt="image">
+                        </a>
+                        <a href="#" class="item-popular__name">T-shirts</a>
+                    </article>
+                    <article class="popular-item item-popular">
+                        <a href="#" class="item-popular__img">
+                            <img class="item-popular__img-img" src="image/popular-img3.png" alt="image">
+                        </a>
+                        <a href="#" class="item-popular__name">Caps</a>
+                    </article>
+                    <article class="popular-item item-popular">
+                        <a href="#" class="item-popular__img">
+                            <img class="item-popular__img-img" src="image/popular-img4.png" alt="image">
+                        </a>
+                        <a href="#" class="item-popular__name">Sandals</a>
+                    </article>
+                    <article class="popular-item item-popular">
+                        <a href="#" class="item-popular__img">
+                            <img class="item-popular__img-img" src="image/popular-img5.png" alt="image">
+                        </a>
+                        <a href="#" class="item-popular__name">Jackets</a>
+                    </article>
+                    <article class="popular-item item-popular">
+                        <a href="#" class="item-popular__img">
+                            <img class="item-popular__img-img" src="image/popular-img6.png" alt="image">
+                        </a>
+                        <a href="#" class="item-popular__name">Coats</a>
+                    </article>
+                </div>
+            </section>
+            <section class="sale-block">
+                <div class="sale-container">
+                    <div class="sale-top">
+                        <h3 class="sale-top__title">Sale up to 70%</h3>
+                        <div class="sale-top__btn-block">
+                            <button class="sale-top__btn-left icon-left-arrow"></button>
+                            <button class="sale-top__btn-right icon-right-arrow"></button>
+                        </div>
+                    </div>
+                    <div class="swiper2 sale-items">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <article class="sale-item item-content">
+                                    <a href="#" class="item-content__img-block img-block__item-content">
+                                        <img src="image/sale-img1.png" alt="image" class="img-block__img">
+                                        <div class="img-block__sale-block sale-block__img-block">
+                                            <p class="sale-block__text">-50%</p>
+                                        </div>
+                                        <div class="img-block__stars-block"></div>
+                                        <button type="button" class="img-block__wishlist icon-heart"></button>
+                                    </a>
+                                    <div class="item-content__text">
+                                        <p class="item-content__name">
+                                            <a href="#" class="item-content__name-text">Leather crossbody bag with gold hardware</a>
+                                        </p>
+                                        <p class="item-content__price"></p>
+                                        <div class="item-content__price-block price-block__item-content">
+                                            <p class="price-block__sale-price">$89.50</p>
+                                            <p class="price-block__full-price">$179.00</p>
+                                        </div>
+                                        <div class="item-content__size-color-blocks">
+                                            <div class="size-block__item-content">
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="36" type="radio" name="size" value="36">
+                                                    <label for="36" class="size-block__text">36</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="37" type="radio" name="size" value="37">
+                                                    <label for="37" class="size-block__text">37</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="38" type="radio" name="size" value="38">
+                                                    <label for="38" class="size-block__text">38</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="39" type="radio" name="size" value="39">
+                                                    <label for="39" class="size-block__text">39</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="40" type="radio" name="size" value="40">
+                                                    <label for="40" class="size-block__text">40</label>
+                                                </div>
+                                            </div>
+                                            <div class="color-block__item-content">
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="black" type="radio" name="color" value="black">
+                                                    <label for="blue" class="color-block__text color-block__text__black"></label>
+                                                </div>
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="brown" type="radio" name="color" value="brown">
+                                                    <label for="blue" class="color-block__text color-block__text__brown"></label>
+                                                </div>
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="blue" type="radio" name="color" value="blue">
+                                                    <label for="blue" class="color-block__text color-block__text__blue"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="item-content__btn-block btn-block__item-content">
+                                            <p class="btn-block__icon icon-cart"></p>
+                                            <p class="btn-block__text">Add to cart</p>
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="sale-item item-content">
+                                    <a href="#" class="item-content__img-block img-block__item-content">
+                                        <img src="image/sale-img2.png" alt="image" class="img-block__img">
+                                        <div class="img-block__sale-block sale-block__img-block">
+                                            <p class="sale-block__text">-50%</p>
+                                        </div>
+                                        <div class="img-block__stars-block"></div>
+                                        <button type="button" class="img-block__wishlist icon-heart"></button>
+                                    </a>
+                                    <div class="item-content__text">
+                                        <p class="item-content__name">
+                                            <a href="#" class="item-content__name-text">Skinny push-up jeans</a>
+                                        </p>
+                                        <p class="item-content__price"></p>
+                                        <div class="item-content__price-block price-block__item-content">
+                                            <p class="price-block__sale-price">$40.00</p>
+                                            <p class="price-block__full-price">$80.00</p>
+                                        </div>
+                                        <div class="item-content__size-color-blocks">
+                                            <div class="size-block__item-content">
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="36" type="radio" name="size" value="36">
+                                                    <label for="36" class="size-block__text">36</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="37" type="radio" name="size" value="37">
+                                                    <label for="37" class="size-block__text">37</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="38" type="radio" name="size" value="38">
+                                                    <label for="38" class="size-block__text">38</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="39" type="radio" name="size" value="39">
+                                                    <label for="39" class="size-block__text">39</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="40" type="radio" name="size" value="40">
+                                                    <label for="40" class="size-block__text">40</label>
+                                                </div>
+                                            </div>
+                                            <div class="color-block__item-content">
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="black" type="radio" name="color" value="black">
+                                                    <label for="blue" class="color-block__text color-block__text__black"></label>
+                                                </div>
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="brown" type="radio" name="color" value="brown">
+                                                    <label for="blue" class="color-block__text color-block__text__brown"></label>
+                                                </div>
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="blue" type="radio" name="color" value="blue">
+                                                    <label for="blue" class="color-block__text color-block__text__blue"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="item-content__btn-block btn-block__item-content">
+                                            <p class="btn-block__icon icon-cart"></p>
+                                            <p class="btn-block__text">Add to cart</p>
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="sale-item item-content">
+                                    <a href="#" class="item-content__img-block img-block__item-content">
+                                        <img src="image/sale-img3.png" alt="image" class="img-block__img">
+                                        <div class="img-block__sale-block sale-block__img-block">
+                                            <p class="sale-block__text">-20%</p>
+                                        </div>
+                                        <div class="img-block__stars-block"></div>
+                                        <button type="button" class="img-block__wishlist icon-heart"></button>
+                                    </a>
+                                    <div class="item-content__text">
+                                        <p class="item-content__name">
+                                            <a href="#" class="item-content__name-text">Wide heel suede ankle boots</a>
+                                        </p>
+                                        <p class="item-content__price"></p>
+                                        <div class="item-content__price-block price-block__item-content">
+                                            <p class="price-block__sale-price">$119.16</p>
+                                            <p class="price-block__full-price">$148.95</p>
+                                        </div>
+                                        <div class="item-content__size-color-blocks">
+                                            <div class="size-block__item-content">
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="36" type="radio" name="size" value="36">
+                                                    <label for="36" class="size-block__text">36</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="37" type="radio" name="size" value="37">
+                                                    <label for="37" class="size-block__text">37</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="38" type="radio" name="size" value="38">
+                                                    <label for="38" class="size-block__text">38</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="39" type="radio" name="size" value="39">
+                                                    <label for="39" class="size-block__text">39</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="40" type="radio" name="size" value="40">
+                                                    <label for="40" class="size-block__text">40</label>
+                                                </div>
+                                            </div>
+                                            <div class="color-block__item-content">
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="black" type="radio" name="color" value="black">
+                                                    <label for="blue" class="color-block__text color-block__text__black"></label>
+                                                </div>
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="brown" type="radio" name="color" value="brown">
+                                                    <label for="blue" class="color-block__text color-block__text__brown"></label>
+                                                </div>
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="blue" type="radio" name="color" value="blue">
+                                                    <label for="blue" class="color-block__text color-block__text__blue"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="item-content__btn-block btn-block__item-content">
+                                            <p class="btn-block__icon icon-cart"></p>
+                                            <p class="btn-block__text">Add to cart</p>
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="swiper-slide">
+                                <article class="sale-item item-content">
+                                    <a href="#" class="item-content__img-block img-block__item-content">
+                                        <img src="image/sale-img3.png" alt="image" class="img-block__img">
+                                        <div class="img-block__sale-block sale-block__img-block">
+                                            <p class="sale-block__text">-20%</p>
+                                        </div>
+                                        <div class="img-block__stars-block"></div>
+                                        <button type="button" class="img-block__wishlist icon-heart"></button>
+                                    </a>
+                                    <div class="item-content__text">
+                                        <p class="item-content__name">
+                                            <a href="#" class="item-content__name-text">Wide heel suede ankle boots</a>
+                                        </p>
+                                        <p class="item-content__price"></p>
+                                        <div class="item-content__price-block price-block__item-content">
+                                            <p class="price-block__sale-price">$119.16</p>
+                                            <p class="price-block__full-price"></p>
+                                        </div>
+                                        <div class="item-content__size-color-blocks">
+                                            <div class="size-block__item-content">
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="36" type="radio" name="size" value="36">
+                                                    <label for="36" class="size-block__text">36</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="37" type="radio" name="size" value="37">
+                                                    <label for="37" class="size-block__text">37</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="38" type="radio" name="size" value="38">
+                                                    <label for="38" class="size-block__text">38</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="39" type="radio" name="size" value="39">
+                                                    <label for="39" class="size-block__text">39</label>
+                                                </div>
+                                                <div class="size-block">
+                                                    <input class="size-block__input" id="40" type="radio" name="size" value="40">
+                                                    <label for="40" class="size-block__text">40</label>
+                                                </div>
+                                            </div>
+                                            <div class="color-block__item-content">
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="black" type="radio" name="color" value="black">
+                                                    <label for="blue" class="color-block__text color-block__text__black"></label>
+                                                </div>
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="brown" type="radio" name="color" value="brown">
+                                                    <label for="blue" class="color-block__text color-block__text__brown"></label>
+                                                </div>
+                                                <div class="color-block">
+                                                    <input class="color-block__input" id="blue" type="radio" name="color" value="blue">
+                                                    <label for="blue" class="color-block__text color-block__text__blue"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="item-content__btn-block btn-block__item-content">
+                                            <p class="btn-block__icon icon-cart"></p>
+                                            <p class="btn-block__text">Add to cart</p>
+                                        </button>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sale-btn">
+                        <a href="#" class="sale-btn__btn btn-1">See all sale products</a>
+                    </div>
+                </div>
+            </section>
+            <section class="info-container">
+                <div class="info-item">
+                    <img src="image/info-svg1.svg" alt="icon" class="info-item__img">
+                    <p class="info-item__title">Fast Worldwide Shipping</p>
+                    <p class="info-item__text">Get free shipping over $250</p>
+                </div>
+                <div class="info-item">
+                    <img src="image/info-svg2.svg" alt="icon" class="info-item__img">
+                    <p class="info-item__title">24/7 Customer Support</p>
+                    <p class="info-item__text">Friendly 24/7 customer support</p>
+                </div>
+                <div class="info-item">
+                    <img src="image/info-svg3.svg" alt="icon" class="info-item__img">
+                    <p class="info-item__title">Money Back Guarantee</p>
+                    <p class="info-item__text">We return money within 30 days</p>
+                </div>
+                <div class="info-item">
+                    <img src="image/info-svg4.svg" alt="icon" class="info-item__img">
+                    <p class="info-item__title">Secure Online Payment</p>
+                    <p class="info-item__text">Accept all major credit cards</p>
+                </div>
+            </section>
+            <section class="insta-container">
+                <div class="insta-text">
+                    <p class="insta-text__text">Follow us on Instagram</p>
+                    <h3 class="insta-text__title">@createx_store</h3>
+                    <a href="#" class="insta-text__btn btn-1">
+                        <p class="insta-text__btn-icon icon-insta"></p>
+                        <p class="insta-text__btn-text">Follow instagram</p>
+                    </a>
+                </div>
+                <div class="insta-img">
+                    <a href="#" class="insta-img__link">
+                        <img src="image/insta-img1.png" alt="image" class="insta-img__img">
+                    </a>
+                    <a href="#" class="insta-img__link">
+                        <img src="image/insta-img2.png" alt="image" class="insta-img__img">
+                    </a>
+                    <a href="#" class="insta-img__link">
+                        <img src="image/insta-img3.png" alt="image" class="insta-img__img">
+                    </a>
+                </div>
+            </section>
+            <section class="fashion-container">
+                <div class="fashion-top">
+                    <h3 class="fashion-top__title">Fashion blog</h3>
+                    <a href="#" class="fashion-top__btn btn-1">View blog</a>
+                </div>
+                <div class="fashion-items">
+                    <article class="fashion-item">
+                        <a href="#" class="fashion-item__img">
+                            <img src="image/fashion-img1.png" alt="image" class="fashion-img__image">
+                        </a>
+                        <div class="fashion-item__content">
+                            <p class="fashion-content__title">
+                                <a href="#" class="fashion-content__title-text">Bag Trends for Summer 2020</a>
+                            </p>
+                            <div class="fashion-content__info-block">
+                                <a href="#" class="fashion-content__info-chapter">Fashion</a>
+                                <div class="fashion-content__info-decor"></div>
+                                <p class="fashion-content__info-date">August 24, 2020</p>
+                                <div class="fashion-content__info-decor"></div>
+                                <div class="fashion-content__info-comments">
+                                    <p class="fashion-content__info-comment-icon icon-chat"></p>
+                                    <p class="fashion-content__info-comment-text">No comments</p>
+                                </div>
+                            </div>
+                            <p class="fashion-content__text">
+                                Ipsum aliquet nisi, hendrerit rhoncus quam tortor, maecenas faucibus. 
+                                Tincidunt aliquet sit vel, venenatis nulla. Integer bibendum turpis convallis...
+                            </p>
+                        </div>
+                    </article>
+                    <article class="fashion-item">
+                        <a href="#" class="fashion-item__img">
+                            <img src="image/fashion-img2.png" alt="image" class="fashion-img__image">
+                        </a>
+                        <div class="fashion-item__content">
+                            <p class="fashion-content__title">
+                                <a href="#" class="fashion-content__title-text">Top 10 of This Season’s Hottest Sneakers</a>
+                            </p>
+                            <div class="fashion-content__info-block">
+                                <a href="#" class="fashion-content__info-chapter">Lifestyle</a>
+                                <div class="fashion-content__info-decor"></div>
+                                <p class="fashion-content__info-date">July 16, 2020</p>
+                                <div class="fashion-content__info-decor"></div>
+                                <div class="fashion-content__info-comments">
+                                    <p class="fashion-content__info-comment-icon icon-chat"></p>
+                                    <p class="fashion-content__info-comment-text">4 comments</p>
+                                </div>
+                            </div>
+                            <p class="fashion-content__text">
+                                Porta habitant vitae quam interdum. Leo viverra non volutpat rhoncus placerat vitae scelerisque. 
+                                Rhoncus augue faucibus maecenas lacus...
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="brand-container">
+                <a href="#" class="brand-item">
+                    <img src="image/brand-svg1.svg" alt="icon">
+                </a>
+                <a href="#" class="brand-item">
+                    <img src="image/brand-svg2.svg" alt="icon">
+                </a>
+                <a href="#" class="brand-item">
+                    <img src="image/brand-svg3.svg" alt="icon">
+                </a>
+                <a href="#" class="brand-item">
+                    <img src="image/brand-svg4.svg" alt="icon">
+                </a>
+                <a href="#" class="brand-item">
+                    <img src="image/brand-svg5.svg" alt="icon">
+                </a>
+                <a href="#" class="brand-item">
+                    <img src="image/brand-svg6.svg" alt="icon">
+                </a>
+            </section>
+            <section class="subscribe-block">
+                <div class="subscribe-container">
+                    <div class="subscribe-content">
+                        <h3 class="subscribe-content__title">Subscribe for updates</h3>
+                        <p class="subscribe-content__text">Subscribe for exclusive early sale access and new arrivals.</p>
+                        <form class="subscribe-content__form" action="" name="subscribe" method="">
+                            <div class="subscribe-content__form-gender gender-form">
+                                <div class="gender-item">
+                                    <input class="gender-item__input" id="women" type="radio" name="gender" value="women">
+                                    <label for="women" class="gender-item__text">Women</label>
+                                </div>
+                                <div class="gender-item">
+                                    <input class="gender-item__input" id="men" type="radio" name="gender" value="men">
+                                    <label for="men" class="gender-item__text">Men</label>
+                                </div>
+                                <div class="gender-item">
+                                    <input class="gender-item__input" id="girls" type="radio" name="gender" value="girls">
+                                    <label for="girls" class="gender-item__text">Girls</label>
+                                </div>
+                                <div class="gender-item">
+                                    <input class="gender-item__input" id="boys" type="radio" name="gender" value="boys">
+                                    <label for="boys" class="gender-item__text">Boys</label>
+                                </div>
+                            </div>
+                            <div class="subscribe-content__form-email email-form">
+                                <div class="email-form__name">
+                                    <label class="email-form__name-label" for="email">Email</label>
+                                </div>
+                                <div class="email-form__email">
+                                    <input class="email-form__email-input" type="email" name="email" id="email" placeholder="Your working email">
+                                    <button class="email-form__email-button" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                            <div class="subscribe-content__form-check check-form">
+                                <div class="check-form__check">
+                                    <input class="check-form__check-input" type="checkbox" name="check" id="check">
+                                    <label class="check-form__check-label icon-check" for="check"></label>
+                                </div>
+                                <div class="check-form__text">
+                                    <label class="check-form__text-label" for="check">I agree to receive communications from Createx Store.</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="subscribe-img">
+                        <img src="image/subscribe-img1.png" alt="image" class="subscribe-image">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer-top-container">
+                <div class="footer-help help-item">
+                    <h3 class="help-item__title">HELP</h3>
+                    <ul class="help-item__links">
+                        <li><a class="help-item__link" href="#">Delivery & returns</a></li>
+                        <li><a class="help-item__link" href="#">FAQ</a></li>
+                        <li><a class="help-item__link" href="#">Track order</a></li>
+                        <li><a class="help-item__link" href="#">Contacts</a></li>
+                        <li><a class="help-item__link" href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-shop shop-item">
+                    <h3 class="shop-item__title">Shop</h3>
+                    <ul class="shop-item__links">
+                        <li><a class="shop-item__link" href="#">New arrivals</a></li>
+                        <li><a class="shop-item__link" href="#">Trending now</a></li>
+                        <li><a class="shop-item__link" href="#">Sales</a></li>
+                        <li><a class="shop-item__link" href="#">Brands</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacts contacts-item">
+                    <h3 class="contacts-item__title">Get in touch</h3>
+                    <p class="contacts-item__tel">
+                        Call:<a href="tel:+(405) 555-0128" class="contacts-item__text-tel">(405) 555-0128</a>
+                    </p>
+                    <p class="contacts-item__email">
+                        Email:<a href="mailto:hello@createx.com" class="contacts-item__text-email">hello@createx.com</a>
+                    </p>
+                    <div class="contacts-item__links">
+                        <a href="#" class="contacts-item__link icon-fb"></a>
+                        <a href="#" class="contacts-item__link icon-insta"></a>
+                        <a href="#" class="contacts-item__link icon-twitter"></a>
+                        <a href="#" class="contacts-item__link icon-yt"></a>
+                        <a href="#" class="contacts-item__link icon-pinterest"></a>
+                    </div>
+                </div>
+                <div class="footer-download download-item">
+                    <h3 class="download-item__title">Download our app</h3>
+                    <div class="download-item__links">
+                        <a class="download-item__link" href="#">
+                            <img src="image/footer-app-store.svg" alt="app store link">
+                        </a>
+                        <a class="download-item__link" href="#">
+                            <img src="image/footer-google-play.svg" alt="google play link">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-line"></div>
+            <div class="footer-bottom-container">
+                <p class="footer-text">© All rights reserved.</p>
+                <a href="#" class="footer-up">Go to top</a>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
